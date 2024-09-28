@@ -9,6 +9,8 @@ class Entity
         Entity(float p_x, float p_y, SDL_Texture* p_tex);
         float getX();
         float getY();
+        void changeX(float p_x);
+        void changeY(float p_y);
         SDL_Texture* getTex();
         SDL_Rect getCurrentFrame();
     private:

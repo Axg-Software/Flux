@@ -17,6 +17,12 @@ int main(int argc, char* argv[])
 
     RenderWindow window("Flux v1.0", 1280, 720);
 
+    // EXAMPLE FOR USING SDL_TEXTURE AND ENTITY CLASS
+    SDL_Texture* flux = window.loadTexture("res/gfx/flux.png");
+    float fluX = 0;
+    float fluY = 0;
+    Entity fluxE(fluX, fluY, flux); 
+
     bool gameRunning = true;
 
     SDL_Event event;
@@ -50,6 +56,7 @@ int main(int argc, char* argv[])
         const float aplha = accumulator / timeStep; 
 
         window.clear();
+        window.render(fluxE);
         window.display(); 
 
         int frameTicks = SDL_GetTicks() - startTicks;
