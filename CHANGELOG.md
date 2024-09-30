@@ -3,6 +3,11 @@ This is inspired by the [FNF changelog](https://github.com/FunkinCrew/Funkin/blo
 
 Written by [Axuko](https://github.com/Ethan-makes-music?tab=repositories)
 
+## V1.2 | 9-28-24
+### Added
+- The width and height of the entity class is not hard coded anymore
+- Another function to entity called 'ChangeX' and 'ChangeY' (fully added movement to entity class)
+
 ## V1.1 | 9-28-24
 ### Added
 - Movement to entity class

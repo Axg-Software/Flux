@@ -15,13 +15,13 @@ int main(int argc, char* argv[])
     if (!(IMG_Init(IMG_INIT_PNG)))
         std::cout << "IMG_Init  HAS FAILED. ERROR: " << SDL_GetError() << std::endl;
 
-    RenderWindow window("Flux v1.0", 1280, 720);
+    RenderWindow window("Flux", 1280, 720);
 
     // EXAMPLE FOR USING SDL_TEXTURE AND ENTITY CLASS
     SDL_Texture* flux = window.loadTexture("res/gfx/flux.png");
     float fluX = 0;
     float fluY = 0;
-    Entity fluxE(fluX, fluY, flux); 
+    Entity fluxE(fluX, fluY, 1280, 720, flux); 
 
     bool gameRunning = true;
 
