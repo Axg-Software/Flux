@@ -42,6 +42,19 @@ void Entity::changeY(float p_y)
     y = p_y;
 }
 
+bool Entity::overlaps(Entity &p_e)
+{
+    if (currentFrame.x + currentFrame.w < p_e.x || currentFrame.x > p_e.x + p_e.w
+    || currentFrame.y + currentFrame.h < p_e.y || currentFrame.y > p_e.y + p_e.h)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
 SDL_Texture* Entity::getTex()
 {
     return tex;

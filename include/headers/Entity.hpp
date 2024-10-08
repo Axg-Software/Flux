@@ -13,6 +13,7 @@ class Entity
         float getH();
         void changeX(float p_x);
         void changeY(float p_y);
+        bool overlaps(Entity &p_e);
         SDL_Texture* getTex();
         SDL_Rect getCurrentFrame();
     private:

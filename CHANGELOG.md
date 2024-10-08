@@ -3,6 +3,9 @@ This is inspired by the [FNF changelog](https://github.com/FunkinCrew/Funkin/blo
 
 Written by [Axuko](https://github.com/Ethan-makes-music?tab=repositories)
 
+## V1.3 | 10-7-24
+- Funtion to make collision dectection way more easy!
+
 ## V1.2 | 9-28-24
 ### Added
 - The width and height of the entity class is not hard coded anymore
